@@ -2,7 +2,7 @@
 
 > A small wrapper for puppeteer to enable even faster headless chrome testing
 
-This is a small, personal project I put together to help me get basic browser testing enabled a lot more quickly and with a whole lot less boilerplate. Essentially it's just a class that puts a layer of abstraction over puppeteer and incorporates a simple http server automatically.
+This is a small, personal project I put together to help me get basic browser testing enabled a lot more quickly and with a whole lot less boilerplate. Essentially it's just a class that puts a layer of abstraction over puppeteer and incorporates a simple http server automatically. The idea is, you drop in a couple server configuration options, grab a page reference, and get testing.
 
 ## Here's how it works
 
