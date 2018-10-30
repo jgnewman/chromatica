@@ -24,13 +24,13 @@ function createBasicServer(routes, port) {
   return server
 }
 
-async function getRawPage(horseman) {
-  const browser = await horseman.getBrowser()
+async function getRawPage(chromatica) {
+  const browser = await chromatica.getBrowser()
   const page = await browser.newPage()
   return page
 }
 
-class Horseman {
+class Chromatica {
 
   constructor(options={}) {
     this.browser = null
@@ -81,4 +81,4 @@ class Horseman {
   }
 }
 
-module.exports = Horseman
+module.exports = Chromatica
