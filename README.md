@@ -82,11 +82,11 @@ Once you have a page object, you're dealing with the raw object produced by pupp
 
 ```javascript
 this.chromatica.getPage({
-  waitUntil: 'networkidle0'
+  waitUntil: 'networkidle0' // This is also a default option
 })
 ```
 
-By default, when you call `getPage`, chromatica will navigation your page to `http://localhost:<YOUR_PORT_NUMBER>`, assuming that you have provided a `null` route that serves up an HTML template. If you would like to change this, just add a `path` field to your options object:
+By default, when you call `getPage`, chromatica will navigate your page to `http://localhost:<YOUR_PORT_NUMBER>`, assuming that you have provided a `null` route that serves up an HTML template. If you would like to change this, just add a `path` field to your options object:
 
 ```javascript
 this.chromatica.getPage({
