@@ -1,6 +1,6 @@
 {
   "name": "chromatica",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "index.js",
   "repository": "git@github.com:jgnewman/chromatica",
   "author": "John Newman <rescuecreative@gmail.com>",
