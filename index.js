@@ -32,7 +32,7 @@ async function getRawPage(horseman) {
 
 class Horseman {
 
-  constructor(options) {
+  constructor(options={}) {
     this.browser = null
     this.server = null
     this.port = options.port || 3000
@@ -75,7 +75,7 @@ class Horseman {
   async getPage(options={}) {
     const defaultOptions = { waitUntil: `networkidle0` }
     const page = await getRawPage(this)
-    const url = options.goto || `http://localhost:${this.port}${options.gotoPath || ''}`
+    const url = `http://localhost:${this.port}${options.path || ''}`
     await page.goto(url, { ...defaultOptions, ...options })
     return page
   }
